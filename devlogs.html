@@ -57,7 +57,10 @@
 								we built a small base camp where the player will start in by flattening out a clearing and placing temporary assets in it, including a tent. We then began coding basic
 								animal AI and created a base animal actor which we used to derive bear, moose, and wolf actors from. The animal had basic roaming behavior which we accomplished by 
 								calculating random locations around the actor every few seconds and using the AI controller to move towards the locations. We also set up navigation mesh volumes
-								so the animals will be able to navigate around obstacles like trees. In addition to development, we also put together a design document with various ideas for animal interactions
+								so the animals will be able to navigate around obstacles like trees. For our first interaction, we began implementing a bear spray feature. We used an invisible line trace to allow
+								players to ward off bears within a close proximity by pointing a bear spray canister at the bear actor. Because the game focuses on the player's exploration throughout the park,
+								we also began experimenting with smooth player locomotion to simulate a more realistic hiking experience rather than using Unreal Engine 5's default teleportation mechanic.
+								In addition to development, we also put together a design document with various ideas for animal interactions
 								and how we could help the user best react to various wildlife encounters. </p>
 
 								<p>Our plan is to have the player start in a base camp, then require them to complete various tasks in far away locations. The base camp will contain 
@@ -67,9 +70,11 @@
 								like standing high and spreading arms around black bears, or walking backwards slowly while avoiding eye contact for moose. These interactions will help 
 								train individuals to recognize what to do in stressful situations and prepare them for real life situations. </p>
 
-								<p>Next week, we will find better assets for our basecamp as well as put together story and context for each player outing. We will add bear spray that wards off bears and other large animals,
+								<p>Next week, we will find better assets for our basecamp as well as put together story and context for each player outing.
+								 We plan to improve the basic bear spray interaction by using controller buttons to trigger the interaction, adding sound effects, and having the bear run away from the player rather than disappearing 
+								 immediately. We will also improve the player's movement in the game by allowing for realistic movement over elevated terrain. We will also add an air horn that wards off bears and other large animals,
 								 as well as build basic survival features like thirst. We will also try to add features for various encounters, and implement ways to detect certain movements, like 
-								standing up high and spreading hands.</p>
+								 standing up high and spreading hands.</p>
 							
 							</section>
 
