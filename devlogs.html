@@ -62,6 +62,26 @@
 								their presence, to prevent startling them. Additionally, we may add dedicated wildlife viewing zones where silence might
 								be encouraged to prevent the users from disrupting the animals.
 							</p>
+							<p>
+								We then added an inventory mechanic for the player to store the items they may need throughout their time in the game. 
+								The player can view and choose items in their inventory bar using the right thumbstick. When an item is chosen,
+								its icon in the inventory bar will become opaque, and the object is spawned in the player's hand for use. Currently, we have three objects in the player's inventory: bear spray, 
+								water bottle, and an air horn. In the future, we will likely add the ability for users to add an item in their inventory
+								by picking the object up in the game. 
+							</p>
+							<p>
+								We also implemented a survival feature that allows the player to drink water to maintain hydration throughout the game.
+								Players will lose hydration as they play our game, and they can view their hydration status by looking at a UI panel attached to the player's wrist,
+								similar to a watch. 
+								If the player has water, they can drink by holding the water bottle up to their face while tilting the bottle upside down. We implemented this 
+								feature by detecting a collision between the top of the water bottle and the camera and checking if the bottom of the bottle
+								is raised higher than the top of the water bottle. When the player drinks water, the volume of water visible in the water bottle will
+								decrease while the player's hydration bar refills. The player can also refill their water bottle at one of the water
+								stations placed around the park. We used a Niagra System to create a stream of water and an invisible line trace to check whether
+								the player's bottle is being held underneath the stream. By refilling their water, the volume of water visible in the bottle will
+								also increase.
+							</p>
+
 						
 						</section>
 
