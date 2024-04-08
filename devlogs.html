@@ -51,19 +51,30 @@
 								<span class="date">April 2nd, 2024</span>
 								<h1>Week 2</h1>
 							</header>
-							<div class="image main"><video height="504" width="896" controls><source src="" type=""/></video></div>
+							<div class="image main"><video height="504" width="896" controls><source src="videos/p3_milestone2" type="video/mp4"/></video></div>
 							<p>
 								We started our second week of development by adding audio capture functionality to our base animal class.
 								This will allow us to easily create overriding functions within each derived animal class to allow them to handle
 								audio input from the player accordingly. We can now create various noise based interactions in our application to
-								add another layer of immersion and teach users valuable skills. One future interaction we plan to create is for users
-								to be loud whenever a bear might be aggressively approaching them to scare off the bear. Another interaction we plan 
-								to create is to maintain a low and steady amount of noise throughout the hike to warn otherwise harmless wildlife of
+								add another layer of immersion and teach users valuable skills. One future interaction we plan to create 
+								is to have players maintain a low and steady amount of noise throughout the hike to warn otherwise harmless wildlife of
 								their presence, to prevent startling them. Additionally, we may add dedicated wildlife viewing zones where silence might
 								be encouraged to prevent the users from disrupting the animals.
 							</p>
 							<p>
-								We then added an inventory mechanic for the player to store the items they may need throughout their time in the game. 
+								This week, we mainly focused on improving the player's interactions with the bears. We first worked on making a more realistic
+								bear spray, where players must remove the safety to use the spray. After removing the safety, players can freely use the spray to deter bears using
+								the trigger button on the right joystick. We also used a Niagara particle system with an added mist texture 
+								to create a more realistic looking spray that shoots from the canister when bear spray is used.
+								When the player aims the spray at an attacking bear, the bear will now flee from the player. We also implemented motion tracking to detect when the 
+								player raises their arms over their head. When players perform this action while being attacked by a bear, the bear will flee. We also used the 
+								audio capture feature described above to allow the player to scare away aggressive bears by raising their voice near the bear.
+								In addition to improving the bear interactions, we also added in a bear model. Using Blender, we were able to add animations to a rigged model found
+								on Sketchfab. We added three animation states to the bears in our game: an idle state, walking state, and an attacking state. While the bears typically 
+								roam around the park, if an aggressive bear gets too close to the player, it will trigger the attacking animation and damage the player.
+							</p>
+							<p>
+								We then added a UI inventory bar for the player to store the items they may need throughout their time in the game. 
 								The player can view and choose items in their inventory bar using the right thumbstick. When an item is chosen,
 								its icon in the inventory bar will become opaque, and the object is spawned in the player's hand for use. Currently, we have three objects in the player's inventory: bear spray, 
 								water bottle, and an air horn. In the future, we will likely add the ability for users to add an item in their inventory
@@ -77,16 +88,32 @@
 								feature by detecting a collision between the top of the water bottle and the camera and checking if the bottom of the bottle
 								is raised higher than the top of the water bottle. When the player drinks water, the volume of water visible in the water bottle will
 								decrease while the player's hydration bar refills. The player can also refill their water bottle at one of the water
-								stations placed around the park. We used a Niagra System to create a stream of water and an invisible line trace to check whether
+								stations placed around the park. We used Unreal's Niagara particle system to create a stream of water and an invisible line trace to check whether
 								the player's bottle is being held underneath the stream. By refilling their water, the volume of water visible in the bottle will
 								also increase.
 							</p> 
 							<p>
-								This week, we mainly focused on improving the player's interactions with the bears. We first worked on making a more realistic
-								bear spray, where players must remove the safety to use the spray. We also used a Niagra System with added spray texture 
-								to a more realistic looking spray that shoots from the canister when the player uses the trigger button on the right joystick.
-								When the player aims the spray at an attacking bear, the bear will now flee from the player. We also implemented motion track when the 
-								player raises their arms over their head. In doing so while being attacked by a bear, the bear will flee
+								Lastly, we implemented a basic moose interaction. Once a player moves within a certain distance to a moose, the moose will stop moving to observe the player.
+								If the player moves far away enough from the moose, the moose will continue without any aggressive behavior. However, if the player makes any loud noises, 
+								the moose will charge and attack the player. In real life, hikers who encounter moose are instructed to slowly and quietly move away from the 
+								moose. Next week, we improve the interaction by tracking the player's speed; if the player moves away from the 
+								moose too quickly, the moose will be startled and attack. 
+							</p>
+							<p>
+								In addition to developing our game this week, we also have identifed a stakeholder for our product. As a former employee of the National Park service, our stakeholder can
+								provide us with insight to help us make our product as impactful as possible. Next week, we will interview our stakeholder to see how we can make the
+								interactions in our game more realistic and educational. We also spent the majority of this week researching the potential social impact of our game. Overall, we found that
+								as the number of National Park visitors increases every year, more and more safety issues arise due to uninformed visitors. In addition to safety concerns, we found that 
+								uninformed visitors often harm the land and wildlife within the parks by leaving the trails, littering, and mistreating the wildlife.
+								We hope that our final product can inform people of the proper ettiquete and safety rules in place to protect both the National Parks and their visitors.
+							</p>
+							<p>
+								Next week, we will begin by fixing some of the bugs present in our game, the most prominent being the motion controls used by players in the game. 
+								We will also add more wildlife interactions as well as more features to reflect the safety rules of the park. We plan to add signs that can inform 
+								players of the important rules within the parks and a mechanic that punishes players for leaving the park trails. In addition, we will finish implementing 
+								a guide book that the player can use to view facts about the animals they may see, instructions for safe interactions, and controller directions for each interaction.
+								In order to create a more realistic experience, we will also edit the landscape to resemble a real National Park, add more animated animal models, and add sound effects
+								to our game.
 							</p>
 
 						
