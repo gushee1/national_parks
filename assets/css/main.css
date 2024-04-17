@@ -2847,9 +2847,9 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
-		margin: 0 0 2rem 0;
-		padding-left: 1rem;
+		
+		list-style-type: "•\002009";
+		 
 	}
 
 		ul li {
