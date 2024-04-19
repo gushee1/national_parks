@@ -51,6 +51,59 @@
 								<span class="date">April 9th, 2024</span>
 								<h1>Week 3</h1>
 							</header>
+							<div class="image main"><video height="504" width="896" controls><source src="videos/NationalParks101_Trailer.mp4" type="video/mp4"/></video></div>
+							<p>During our final week of development, we focused on polishing our game's map, interactions, and UI to improve players' experiences. We first improved 
+								our map's appearance by adding mountains in the distance to cover the black horizon of the scene's skybox. We also adjusted the terrain elevation around the 
+								park to better resemble the terrain in Yellowstone. For polising the appearance of the park, we also added different textures around the rivers and bodies of 
+								water and added more trees to make the terrain less sparse. We also adjusted the direction, shape, and placement of the rivers and geyser basin to appear more realistic. 
+								We then added more animals to increase the probability of players encountering different types of animals 
+								on the trails. 
+							</p>
+							<p>
+								We then improved the players' interactions and overall experience in the game by fixing small bugs that were noticed during this week's playtest. Many of the bugs involved 
+								adjusting parameters in the code to make the player's experience better. For the geyser and raccoon interactions that result in death, we found 
+								that the parameters in our code resulted in these deaths to be triggered too easily, which players found irritating. To make the geyser death trigger less 
+								sensitive, we decreased the size of the colliders around the geyser basin that trigger death when overlapped by the player. For the raccoon, we decreased the 
+								distance threshold between the player's hand and the raccoon actor necessary to trigger death. Players also found that they would often pull the safety clip from the bear spray before 
+								holding the canister, which does not reflect how bear spray would be used in real life. In order to fix this, we enabled collisions on the safety clip child component on the bear spray when the player grabbed the canister 
+								and disabled collisions when the player dropped the bear spray canister. While these changes are small, they add to the overall immersion players will experience while playing our game.
+							</p>
+							<p>
+								In addition to tweaking the interactions, we also added sound over the animal walking animations so players can be alerted of an approaching animal. We also split the interactions associated with the bear into two types of bears commonly 
+								seen in the National parks, 
+								a black bear and a grizzly bear. In real life, people are instructed to use bear spray on aggressive grizzlies. For black bear encounters, people are instructed to make noise and raise their hands over their heads as black bears are 
+								more timid and can be scared away easily. This change allows the player to see the difference between how grizzly bear encounters should be handled versus black bear encounters. 
+								 We also added additional death triggers to 
+								make the game more structured. Players now die and must restart the game if they walk into rivers or stay out on the trails past dusk. These death triggers 
+								further restrict where the player can travel to in the map as well as make the game more realistic to reflect the actual rules enforced in the National Parks.
+							</p>
+							<p>
+								This week, we also added additional UI to better guide the player through the game. We first added a main menu where the player can view the title of the game and its purpose before 
+								choosing a map to explore. We currently only have a map corresponding to Yellowstone National Park, but in the future, we would add other parks such as Zion or Yosemite. We then added a diagram of the Oculus controllers 
+								that maps each control to its function in our game. We placed this diagram in the main menu area as well as in the player's base camp in the game for easy referencing. We also added 
+								an equipment page to our guidebook that lists the three main items players will use during their time in the game and instructions on how to use them. We also included additional context for 
+								the checklist of hiking trails in the guidebook to make the objective of the game explicit and clear to the player. We also improved the appearance of the tip screen that appears 
+								when the player does something that is against the rules of the park but does not directly result in death, like leaving the trail. We included additional tips or messages that appear 
+								when the player uses bear spray on animals besides the grizzly bear. This is to reflect the importance of respectful behavior towards the parks and its wildlife.
+							</p>
+							<p>
+								In addition to polishing our game, we also worked to create a marketing trailer this week. By having a marketing trailer, we can easily present our product and its purpose to 
+								potential buyers. We also improved our website by removing the extra text on the homepage to make the viewer's experience better. We also added our trailer and a gallery section so that 
+								viewers can easily see what our game is without having to look through the devlogs. Lastly, we added a pricing page so that potential buyers can see the features included in the game and the 
+								cost. This pricing plan would allow us to sustain the current Yellowstone map as well as begin to develop maps based on other National Parks. Adding additional maps would allow us to expand our potential buyers 
+								and make the game more appealing for use by other National Parks besides Yellowstone.
+								Our changes this week and last week have been focused on improving the educational aspect of our game. This makes our game stand out as a 
+								potential tool to be used by National Park outreach programs or visitor centers to better educate visitors about the rules in place to preserve both the parks and the safety of their visitors. 
+								During our four weeks of development, our game has become a fun and interactive way to learn about the best way safely and respectfully travel 
+								through the National Parks and the consequences of breaking these rules. 
+							</p>
+						</section>
+
+						<section class="post">
+							<header class="major">
+								<span class="date">April 9th, 2024</span>
+								<h1>Week 3</h1>
+							</header>
 							<div class="image main"><iframe width="896" height="504" src="https://www.youtube.com/embed/6MWbO9yBD5Q?si=ePwLP7ERB3YbVJeI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 							<p>
 								This week, we focused on making our game more structured in order to better reflect the game's objective, which is to educate players on the 
